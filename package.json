@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://joiceron.github.io/",
+  "homepage": "https://joiceron.github.io/joiceron-web-in-progress/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin padding-components {
+  padding: 1rem;
+  @include tablet {
+    padding: 1rem 2rem;
+  }
+  @include desktop() {
+    margin: 0 auto;
+  }
+}
+
+
