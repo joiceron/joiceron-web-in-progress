@@ -1,36 +1,26 @@
+import "./App.scss";
 import { useState } from "react";
 import viteLogo from "/Logo.png";
-import Header from "./components/NavBar/NavBar";
+import NavBar from "./components/NavBar/NavBar";
+import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
-import "./App.scss";
+import AboutMe from "./components/AboutMe/AboutMe";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header />
-      <main>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
-        </a>
-      </main>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Footer />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          {/* <Route path="*" element={<Hero />} /> */}
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

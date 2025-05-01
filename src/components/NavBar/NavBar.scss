@@ -6,16 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0;
   background-color: $color-white-whisper;
   @include padding-components;
 
   &__logo {
     text-decoration: none;
     display: flex;
-  
 
-    &--icon{
+    &--icon {
       height: 2.5rem;
       padding: 0 0.5rem;
       @include tablet {
@@ -23,38 +21,17 @@
       }
     }
 
-    &--text{
-
+    &--text {
     }
   }
 
-  &__button-icon {
-    height: 0.5rem;
-    margin: 0 0.3rem 0 0.3rem;
-    align-self: flex-end;
-    width: auto;
+  &__button {
+    padding: 0.5rem;
+    align-items: center;
+
     @include tablet {
       height: 0.85rem;
-      margin: 0 0.5rem;
+      padding: 1rem;
     }
-  }
-}
-
-.logo {
-  padding: 0 0.5rem;
-  // text-align: center;
-  height: 2rem;
-  // font-weight: 700;
-  @include tablet {
-    // padding: 0.6875rem 1.375rem;
-    height: 2.5rem;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-  &--selected {
-  }
-  &--without-border {
-    border: none;
   }
 }
