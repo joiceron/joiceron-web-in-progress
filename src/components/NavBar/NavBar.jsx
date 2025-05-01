@@ -15,18 +15,17 @@ export default function NavBar() {
       </a>
       <ul>
         <li className={"header__button"}>
-          {" "}
           <NavLink to={"/"}>Hero</NavLink>
         </li>
         <li className={"header__button"}>
-          {" "}
-          <NavLink to={"/"}>Portfolio</NavLink>
+          <NavLink to={"/Portfolio"}>Portfolio</NavLink>
         </li>
         <li className={"header__button"}>
-          {" "}
-          <NavLink to={"/AboutMe"}> About me</NavLink>
+          <NavLink to={"/AboutMe"}>About me</NavLink>
         </li>
-        <li className={"header__button"}>Contact</li>
+        <li className={"header__button"}>
+          <NavLink to={"/Contact"}>Contact</NavLink>
+        </li>
       </ul>
     </nav>
   );
