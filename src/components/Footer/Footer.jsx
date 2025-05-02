@@ -6,3 +6,6 @@ export default function Footer() {
     </footer>
   );
 }
+
+            // to="javascript:void(0)"
+            // onClick={() => (window.location = "mailto:example@hotmail.com")}
