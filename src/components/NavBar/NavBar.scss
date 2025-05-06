@@ -7,8 +7,8 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: $color-quartz;
-  // background-color: $color-white-whisper;
+  // background-color: $color-quartz;
+  background-color: $color-white-whisper;
   position: relative;
   flex-direction: column;
   align-items: start;
@@ -31,7 +31,7 @@
     }
   }
 
-  &__exit {
+  &__menu {
     @include tablet {
       display: none;
     }
@@ -51,7 +51,7 @@
 .nav {
   display: flex;
   flex-direction: column;
-  height: 20vh;
+  height: 40vh;
   justify-content: space-evenly;
 
   @include tablet {
@@ -69,13 +69,10 @@
       text-decoration: none;
       color: $color-purple-royal;
       padding: 0.5rem 0.8rem;
-      fill: $color-purple-royal;
 
       @include tablet {
         font-size: 1rem;
-        align-items: center;
-      
-        
+        // align-items: center;
       }
 
       &:hover {
@@ -84,9 +81,30 @@
         fill: $color-white-whisper;
       }
     }
+
+    &--icon {
+      // text-decoration: none;
+      color: $color-purple-royal;
+      padding: 0.1rem;
+      margin: 0rem 0.8rem;
+      fill: $color-purple-royal;
+
+    
+
+      &:hover {
+        color: $color-white-whisper;
+        background-color: $color-purple-royal;
+        fill: $color-white-whisper;
+        border-radius: 2px;
+      }
+    }
   }
 }
 
-.icon{
-  display: block;
+.aside--hide {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
 }

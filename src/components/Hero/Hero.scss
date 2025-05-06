@@ -3,5 +3,16 @@
 @use "../../styles/partials/globals.scss" as *;
 
 .hero {
-    background-color: $color-white-whisper;
+    // background-color: $color-white-whisper;
+    display: flex;
+    position: relative;
+
+    &__bg{
+    position: absolute;
+    z-index: -1;
+       width: 100vw; 
+       @include desktop{
+        width: 67.5rem; 
+       }
+    }
 }

@@ -20,12 +20,25 @@ export default function NavBar() {
           />
           <h1 className="header__logo--text">joiceron</h1>
         </NavLink>
-        <button className="header__exit" onClick={handleToggleAside}>
-          <span className="material-symbols-outlined">close</span>
-        </button>
+        {!isAsideDisplayed ? (
+          <button className="header__menu" onClick={handleToggleAside}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z" />
+            </svg>
+          </button>
+        ) : (
+          <button className="header__menu" onClick={handleToggleAside}>
+            <span className="material-symbols-outlined">close</span>
+          </button>
+        )}
       </div>
 
-      <ul className="nav">
+      <ul className={isAsideDisplayed ? "nav" : "nav aside--hide"}>
         <li className="nav__button">
           <NavLink className="nav__button--link" to={"/"}>
             Hero
@@ -48,7 +61,6 @@ export default function NavBar() {
         </li>
         <li className="nav__button">
           <Link
-            className="nav__button--link"
             to="https://www.linkedin.com/in/joiceron"
             target="_blank"
             rel="noopener noreferrer"
@@ -57,12 +69,12 @@ export default function NavBar() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-               className="nav__button--link icon"
+              className="nav__button--icon"
               x="0px"
               y="0px"
               alt="Going to LinkedIn"
-              height="18"
-               width="18"
+              height="20"
+              width="20"
               viewBox="0 0 50 50"
             >
               <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
