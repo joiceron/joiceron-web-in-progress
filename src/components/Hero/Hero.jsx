@@ -5,9 +5,6 @@ import bgHero1 from "../../assets/images/img_bg_1.jpg";
 import bgHero2 from "../../assets/images/img_bg_2.jpg";
 
 export default function Hero() {
-  // const [joke, setJoke] = useState("no joke");
-  // const jokePart1 = "Why are artists so good at keeping secrets?";
-  // const jokePart2 = "Because they know how to shade the truth!";
   const [jokeSetup, setJokeSetup] = useState(
     "Why do programmers prefer dark mode?"
   );
@@ -63,13 +60,10 @@ export default function Hero() {
     }
   };
 
-  // jokePunchline = jokeArray[1] + (jokeArray[2] ? jokeArray[2] : "");
-
   return (
     <>
       <div className="hero">
         <img className="hero__bg" src={bgHero1} alt="background with flowers" />
-        {/* <img src={bgHero2} alt="background with flowers" /> */}
         <h2 className="hero__joke hero__joke--set-up">{jokeSetup}</h2>
         <h2 className="hero__joke hero__joke--punch-line">{jokePunchline}</h2>
       </div>

@@ -64,8 +64,6 @@ export default function NavBar() {
             to="https://www.linkedin.com/in/joiceron"
             target="_blank"
             rel="noopener noreferrer"
-            // to="javascript:void(0)"
-            // onClick={() => (window.location = "mailto:example@hotmail.com")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
