@@ -3,16 +3,42 @@
 @use "../../styles/partials/globals.scss" as *;
 
 .hero {
-    // background-color: $color-white-whisper;
-    display: flex;
-    position: relative;
+  // background-color: $color-white-whisper;
+  display: flex;
+  position: relative;
 
-    &__bg{
-    position: absolute;
-    z-index: -1;
-       width: 100vw; 
-       @include desktop{
-        width: 67.5rem; 
-       }
+  &__bg {
+    z-index: 0;
+    margin: auto;
+    width: 100vw;
+
+    @include desktop {
+      width: 67.5rem;
     }
+  }
+
+  &__joke {
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+
+    @include tablet {
+      left: 50%;
+      font-size: 18px;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    @include desktop {
+      font-size: 24px;
+    }
+    &--set-up {
+      top: 35%;
+      //   transform: translate(-50%, -50%);
+    }
+
+    &--punch-line {
+      top: 60%;
+    }
+  }
 }

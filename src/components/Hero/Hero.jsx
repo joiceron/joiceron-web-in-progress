@@ -5,9 +5,15 @@ import bgHero1 from "../../assets/images/img_bg_1.jpg";
 import bgHero2 from "../../assets/images/img_bg_2.jpg";
 
 export default function Hero() {
-  const [joke, setJoke] = useState("");
-  const jokePart1 = "Why are artists so good at keeping secrets?"
-   const jokePart2 = "Because they know how to shade the truth!"
+  // const [joke, setJoke] = useState("no joke");
+  // const jokePart1 = "Why are artists so good at keeping secrets?";
+  // const jokePart2 = "Because they know how to shade the truth!";
+  const [jokeSetup, setJokeSetup] = useState(
+    "Why do programmers prefer dark mode?"
+  );
+  const [jokePunchline, setJokePunchline] = useState(
+    "Because light attracts bugs."
+  );
   useEffect(() => {
     fetchJoke();
   }, []);
@@ -17,26 +23,55 @@ export default function Hero() {
       const response = await axios.get("https://icanhazdadjoke.com/", {
         headers: { Accept: "application/json" },
       });
-      console.log(response.data.joke);
-      setJoke(response.data.joke);
+
+      let joke = `${response.data.joke}`;
+      console.log(`${joke}`);
+      let temporal = [];
+      let temporalMark = "";
+
+      if (joke.endsWith(".")) {
+        joke = joke.slice(0, -1);
+      }
+
+      if (joke.includes("?")) {
+        temporalMark = "?";
+        temporal = joke.split(temporalMark);
+      } else if (joke.includes("...")) {
+        temporalMark = "...";
+        temporal = joke.split(temporalMark);
+      } else if (joke.includes(".")) {
+        temporalMark = ".";
+        temporal = joke.split(temporalMark);
+      } else if (joke.includes(",")) {
+        temporalMark = ",";
+        temporal = joke.split(temporalMark);
+      }
+      if (
+        temporal != [] &&
+        temporal[0] != undefined &&
+        temporal[1] != undefined
+      ) {
+        setJokeSetup(`${temporal[0]}${temporalMark}`);
+        setJokePunchline(`${temporal[1]}.`);
+        // TO-Do:
+        // manage cases when it splits more that 2
+        // if endsWith "!" then no "."
+        // when it has a ` ?" `
+      }
     } catch (error) {
       console.error(error);
     }
   };
 
-  if (!joke) {
-    if (joke.includes(".","?")===true){
-      console.log("2");
-    }
-  }
+  // jokePunchline = jokeArray[1] + (jokeArray[2] ? jokeArray[2] : "");
 
   return (
     <>
       <div className="hero">
         <img className="hero__bg" src={bgHero1} alt="background with flowers" />
         {/* <img src={bgHero2} alt="background with flowers" /> */}
-        <h1>{joke}</h1>
-        {/* {joke} */}
+        <h2 className="hero__joke hero__joke--set-up">{jokeSetup}</h2>
+        <h2 className="hero__joke hero__joke--punch-line">{jokePunchline}</h2>
       </div>
     </>
   );
