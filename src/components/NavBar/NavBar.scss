@@ -6,8 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  // background-color: $color-quartz;
   background-color: $color-white-whisper;
   position: relative;
   flex-direction: column;
@@ -72,7 +70,6 @@
 
       @include tablet {
         font-size: 1rem;
-        // align-items: center;
       }
 
       &:hover {
@@ -83,13 +80,10 @@
     }
 
     &--icon {
-      // text-decoration: none;
       color: $color-purple-royal;
       padding: 0.1rem;
       margin: 0rem 0.8rem;
       fill: $color-purple-royal;
-
-    
 
       &:hover {
         color: $color-white-whisper;

@@ -63,9 +63,11 @@ export default function Hero() {
   return (
     <>
       <div className="hero">
-        <img className="hero__bg" src={bgHero1} alt="background with flowers" />
-        <h2 className="hero__joke hero__joke--set-up">{jokeSetup}</h2>
-        <h2 className="hero__joke hero__joke--punch-line">{jokePunchline}</h2>
+        <img className="hero__bg" src={bgHero2} alt="background with flowers" />
+        <div className="hero__joke">
+          <h2 className="hero__joke--set-up">{jokeSetup}</h2>
+          <h2 className="hero__joke--punch-line">{jokePunchline}</h2>
+        </div>
       </div>
     </>
   );

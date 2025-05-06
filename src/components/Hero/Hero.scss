@@ -3,7 +3,6 @@
 @use "../../styles/partials/globals.scss" as *;
 
 .hero {
-  // background-color: $color-white-whisper;
   display: flex;
   position: relative;
 
@@ -11,34 +10,39 @@
     z-index: 0;
     margin: auto;
     width: 100vw;
-
-    @include desktop {
-      width: 67.5rem;
-    }
+    max-height: 50vh;
+    object-fit: cover;
   }
 
   &__joke {
     position: absolute;
+    padding-right: 1rem;
     z-index: 1;
     left: 10%;
+    top: 35%;
 
-    @include tablet {
-      left: 50%;
-      font-size: 18px;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    @include desktop {
-      font-size: 24px;
-    }
     &--set-up {
-      top: 35%;
-      //   transform: translate(-50%, -50%);
+      font-size: 0.875rem;
+
+      @include tablet {
+        font-size: 1.375rem;
+      }
+
+      @include desktop {
+        font-size: 2.25rem;
+      }
     }
 
     &--punch-line {
-      top: 60%;
+      @include tablet {
+        font-size: 1.125rem;
+        padding-top: 1rem;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+      }
     }
   }
 }
