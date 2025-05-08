@@ -19,31 +19,43 @@ p {
 
 h1 {
   font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   color: $color-purple-royal;
 }
 
 h2 {
   font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
-}
-
-h3 {
-  font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
   color: $color-black;
 }
 
-h4 {
+h3 {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   color: $color-candy;
 }
 
-button {
+h4 {
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+
+.button {
   @extend p;
+
+  &:hover {
+    color: $color-white-whisper;
+    background-color: $color-purple-royal;
+    font-weight: 600;
+  }
+}
+
+.active{
+  background-color: $color-quartz;
 }

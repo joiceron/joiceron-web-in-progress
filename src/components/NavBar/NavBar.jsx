@@ -12,14 +12,14 @@ export default function NavBar() {
   return (
     <nav className="header">
       <div className="header__tittle">
-        <NavLink className="header__logo" to={"#"}>
+        <Link className="header__logo" to={"/"}>
           <img
             src={joiceronLogo}
             className="header__logo--icon"
             alt="Vite logo"
           />
           <h1 className="header__logo--text">joiceron</h1>
-        </NavLink>
+        </Link>
         {!isAsideDisplayed ? (
           <button className="header__menu" onClick={handleToggleAside}>
             <svg
@@ -39,23 +39,23 @@ export default function NavBar() {
       </div>
 
       <ul className={isAsideDisplayed ? "nav" : "nav aside--hide"}>
-        <li className="nav__button">
-          <NavLink className="nav__button--link" to={"/"}>
+        <li className="nav__button ">
+          <NavLink className="nav__button--link button" to={"/"}>
             Hero
           </NavLink>
         </li>
-        <li className="nav__button">
-          <NavLink className="nav__button--link" to={"/Portfolio"}>
+        <li className="nav__button ">
+          <NavLink className="nav__button--link button" to={"/Portfolio"}>
             Portfolio
           </NavLink>
         </li>
-        <li className="nav__button">
-          <NavLink className="nav__button--link" to={"/AboutMe"}>
+        <li className="nav__button ">
+          <NavLink className="nav__button--link button" to={"/AboutMe"}>
             About me
           </NavLink>
         </li>
-        <li className="nav__button">
-          <NavLink className="nav__button--link" to={"/Contact"}>
+        <li className="nav__button ">
+          <NavLink className="nav__button--link button" to={"/Contact"}>
             Contact
           </NavLink>
         </li>

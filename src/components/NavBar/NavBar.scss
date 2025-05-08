@@ -71,22 +71,14 @@
       @include tablet {
         font-size: 1rem;
       }
-
-      &:hover {
-        color: $color-white-whisper;
-        background-color: $color-purple-royal;
-        fill: $color-white-whisper;
-      }
     }
 
     &--icon {
-      color: $color-purple-royal;
-      padding: 0.1rem;
-      margin: 0rem 0.8rem;
+      padding: 0.1rem ;
+      margin: 0rem 0.5rem;
       fill: $color-purple-royal;
 
       &:hover {
-        color: $color-white-whisper;
         background-color: $color-purple-royal;
         fill: $color-white-whisper;
         border-radius: 2px;

@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import AboutMe from "./components/AboutMe/AboutMe";
-import Portfolio from "./components/Portfolio/Portfolio";
+import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 import Contact from "./components/Contact/Contact";
 
 function App() {
@@ -15,13 +15,13 @@ function App() {
     <>
       <Router>
         <NavBar />
+        <Hero />
         <main className="main">
           <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/Portfolio" element={<Portfolio />} />
+            <Route path="/" element={<PortfolioPage />} />
             <Route path="/AboutMe" element={<AboutMe />} />
             <Route path="/Contact" element={<Contact />} />
-            <Route path="*" element={<Hero />} />
+            <Route path="*" element={<PortfolioPage />} />
           </Routes>{" "}
         </main>
         <Footer />
