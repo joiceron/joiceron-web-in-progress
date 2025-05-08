@@ -1,9 +1,9 @@
 import "./Proyecto.scss";
-
+import image from "../../assets/images/web/budget-bloom.png";
 export default function Proyecto() {
   return (
     <article>
-        <img src="" alt="" />
+      <img src={image} alt="" className="image" />
       <h4>Budget Bloom</h4>
       <p>
         Designed, developed and maintained a budget planner using modular

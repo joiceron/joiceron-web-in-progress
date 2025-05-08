@@ -40,11 +40,6 @@ export default function NavBar() {
 
       <ul className={isAsideDisplayed ? "nav" : "nav aside--hide"}>
         <li className="nav__button ">
-          <NavLink className="nav__button--link button" to={"/"}>
-            Hero
-          </NavLink>
-        </li>
-        <li className="nav__button ">
           <NavLink className="nav__button--link button" to={"/Portfolio"}>
             Portfolio
           </NavLink>
