@@ -9,26 +9,29 @@
 
   &__nav {
     list-style-type: none;
-    background-color: $color-pale;
     display: flex;
     flex-wrap: wrap;
 
     @include tablet {
       width: 20rem;
       flex-direction: column;
-      padding-left: 1rem;
     }
     & li {
       flex-grow: 1;
+      @include tablet {
+        flex-grow: 0;
+      }
     }
     &--button {
       padding: 1.5rem 1rem;
-      border: 0;
+      border: 1px solid $color-purple-royal;
       flex-grow: 1;
-      background-color: transparent;
+      background-color: $color-pale;
       width: 100%;
       @include tablet {
+        border: 0;
         border-bottom: 1px solid $color-purple-royal;
+        padding: 2rem 3rem;
       }
     }
   }

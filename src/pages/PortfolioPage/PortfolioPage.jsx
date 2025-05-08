@@ -1,7 +1,8 @@
 import "./PortfolioPage.scss";
 import { useState } from "react";
-import Proyecto from "../../components/Proyecto/Proyecto";
+import Project from "../../components/Project/Project";
 import { NavLink } from "react-router-dom";
+import webProjects from "../../data/web-projects-list.json";
 
 export default function PortfolioPage() {
   const industry = [
@@ -68,8 +69,9 @@ export default function PortfolioPage() {
 
       <section className="section">
         <h3>{portfolioDoc}</h3>
-
-        <Proyecto />
+        {webProjects.map((project) => (
+          <Project project={project} />
+        ))}
       </section>
     </main>
   );
