@@ -1,15 +1,18 @@
 [
   {
     "tittle": "Budget Bloom",
+    "key": "budgetBloom",
     "role": "Full Stack Developer",
-    "github": "https://joiceron.github.io/budget-bloom/",
+    "link": "https://github.com/joiceron/budget-bloom",
+    "link2": "https://joiceron.github.io/budget-bloom/",
     "description": "Designed, developed and maintained a budget planner using modular components with React.js, MySQL, and Knex. Integrated RESTful APIs and ensured scalability with GitHub backups.",
     "tags": ["Node.js", "MySQL", "REST API", "React"]
   },
   {
     "tittle": "Web API Hackathon",
+    "key": "webApiHackaton",
     "role": "Full Stack Developer",
-    "github": "https://github.com/Sara-Ho99/trivia-quiz",
+    "link": "https://github.com/Sara-Ho99/trivia-quiz",
     "description": "Developed Brainteasers, a trivia quiz app using vanilla JavaScript. Actively participated in agile standups and performed peer code reviews.",
     "tags": ["GitHub", "Vanilla JavaScript", "REST API", "React"]
   }

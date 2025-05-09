@@ -1,16 +1,31 @@
 import "./Project.scss";
-import image from "../../assets/images/web/budget-bloom.png";
-
-export default function Project({ project }) {
+import arrow from "../../assets/icons/star.svg";
+import { Link } from "react-router-dom";
+export default function Project({ project, image }) {
   return (
-    <article className="proyec">
-      <img src={image} alt="" className="image" />
-      <h4>{project.tittle}</h4>
-      <p>{project.description}</p>
+    <article className="project">
+      <div className="project">
+        <img src={image} alt={`${image} preview`} className="image" />
+      </div>
       <div>
-        {project.tags.map((tag) => (
-          <span>{tag}</span>
-        ))}
+        <h4>{project.tittle}</h4>
+        <p>{project.role}</p>
+        <p>{project.description}</p>
+        <ul>
+          {project.tags.map((tag, index) => (
+            <li key={index}>{tag}</li>
+          ))}
+        </ul>
+        <Link to={project.link}>
+          <img src={arrow} alt="" /> Go to GitHub
+        </Link>
+        {project.link2 ? (
+          <Link to={project.link}>
+            <img src={arrow} alt="" /> Live Project
+          </Link>
+        ) : (
+          ""
+        )}
       </div>
     </article>
   );

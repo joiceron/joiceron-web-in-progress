@@ -1,19 +1,15 @@
 [
   {
-    "tittle": "Meowmory",
-    "github": "https://github.com/joiceron/Meowmory",
-    "description": "Memory musical game built in Java with customized art.",
-    "tags": ["Java", "Adobe Illustrator"]
-  },
-  {
+    "key": "game00",
     "tittle": "HuntingCat",
-    "github": "https://github.com/joiceron/HuntingCat/tree/main/HuntingCat",
+    "link": "https://github.com/joiceron/HuntingCat/tree/main/HuntingCat",
     "description": "Game built in Python with customized art",
     "tags": ["C++", "Phython"]
   },
   {
+    "key": "game01",
     "tittle": "TacoTour",
-    "github": "https://github.com/Sara-Ho99/trivia-quiz",
+    "link": "https://github.com/Sara-Ho99/trivia-quiz",
     "description": "Interdiciplinary project where I work as a lead-artist and animator",
     "tags": [
       "GitHub Desktop",
@@ -25,21 +21,31 @@
     "role": "Lead Artist & Programmer"
   },
   {
+    "key": "game02",
     "tittle": "Canguil",
-    "github": "https://maubass2891.itch.io/canguils-adventure",
+    "link": "https://maubass2891.itch.io/canguils-adventure",
     "description": "This was my first participation in a GameJame",
     "tags": ["Photoshop", "Piskel", "GlueIT", "LibreSprite"],
     "role": "Lead Artist"
   },
   {
+    "key": "game03",
     "tittle": "Asteroids",
-    "github": "https://github.com/joiceron/Asteroids",
+    "link": "https://github.com/joiceron/Asteroids",
     "description": "Retro game made in C++, Blitz3D engine. Customized art.",
     "tags": ["C++", "Photoshop"]
   },
   {
+    "key": "game04",
+    "tittle": "Meowmory",
+    "link": "https://github.com/joiceron/Meowmory",
+    "description": "Memory musical game built in Java with customized art.",
+    "tags": ["Java", "Adobe Illustrator"]
+  },
+  {
+    "key": "game05",
     "tittle": "GoofyGroovers",
-    "github": "https://sebastiancanseco.itch.io/goofygroovers",
+    "link": "https://sebastiancanseco.itch.io/goofygroovers",
     "description": "GoofyGroovers invites you to a multiplayer pixel art experience where you and your friends compete in a race.",
     "tags": ["LibreSprite", "C#", "Photoshop"]
   }
