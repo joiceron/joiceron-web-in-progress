@@ -4,12 +4,10 @@ import ExperienceItem from "../../components/ExperienceItem/ExperienceItem";
 import experiencesList from "../../data/experiences-list.json";
 
 export default function PortfolioPage() {
-  const industry = ["Profile", "Education", "Work Experience"];
-  const [content, setContent] = useState("Profile");
   return (
     <main className="about-me">
       <section className="profile">
-        <h3 className="profile">{industry[0]}</h3>
+        <h3 className="profile">Profile</h3>
         <p className="profile">
           Hi! I'm Joice Ceron I am a detail-oriented, UI/UX Designer & Software
           Development. My passion for art and visual experiences fuels my belief

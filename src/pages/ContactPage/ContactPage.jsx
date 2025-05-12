@@ -2,7 +2,6 @@ import "./ContactPage.scss";
 import { useState } from "react";
 
 export default function PortfolioPage() {
-  const [content, setContent] = useState("Profile");
   return (
     <main className="">
       <section className="">
