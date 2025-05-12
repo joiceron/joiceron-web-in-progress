@@ -1,10 +1,10 @@
-import "./Photo.scss";
+import "./PhotoItem.scss";
 
-export default function Photo({draw , image}) {
+export default function PhotoItem({draw , image}) {
   return (
     <div className="photo">
       <img src={image} alt={`${{image}} preview`} />
-      This the Photo
+      <div>{draw.tittle}</div>
     </div>
   );
 }

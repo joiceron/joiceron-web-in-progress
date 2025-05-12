@@ -1,0 +1,134 @@
+[
+  {
+    "type": "start",
+    "tittle": "Born",
+    "institution": "",
+    "place": "Ecuador",
+    "description": "T",
+    "skills": ["live"]
+  },
+  {
+    "type": "Education",
+    "tittle": "Bachelor's Degree of Graphic Design",
+    "institution": "ESPOL",
+    "place": "Ecuador",
+    "start": 1451606400,
+    "end": 1609459200,
+    "description": "The Graphic Design program at ESPOL provided a strong foundation in visual communication, digital media, and design principles. I gained hands-on experience in branding, illustration, and multimedia, developing skills that enable me to craft compelling, visually impactful designs for diverse media platforms.",
+    "skills": [
+      "Branding",
+      "Marketing",
+      "Design Visual Principles",
+      "Color Theory"
+    ]
+  },
+  {
+    "type": "Education",
+    "tittle": "Game Development Diploma",
+    "institution": "New Brunswick Community College (NBCC)",
+    "place": "Miramichi, NB",
+    "start": 1661990400,
+    "end": 1717200000,
+    "description": "The Game Development program at NBCC equipped me with practical skills in game design, programming, and production. Through team projects, I developed strong collaboration and problem-solving abilities, preparing me to contribute creatively and technically to the fast-paced gaming industry.",
+    "skills": ["Game Design", "Programming", "Team Projects", "Game Production"]
+  },
+  {
+    "type": "Education",
+    "tittle": "Software Engineering Diploma",
+    "institution": "BrainStation",
+    "place": "Toronto, ON",
+    "start": 1730419200,
+    "end": 1738368000,
+    "description": "In BrainStation's Software Engineering bootcamp, I learned key software engineering concepts and computer science fundamentals. I gained hands-on experience with HTML, CSS, Terminal, React, MySQL, and I learned to create multi-page web products from scratch using tools like BEM, Flexbox, Sass, and Git.",
+    "skills": [
+      "Software Engineering",
+      "Web Development",
+      "React",
+      "HTML",
+      "CSS",
+      "Git",
+      "MySQL"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Virtual Platform Specialist",
+    "institution": "STEM Montessori Academy of Canada",
+    "place": "Remote",
+    "start": 1451606400,
+    "end": 1609459200,
+    "description": "Developing, managing, and optimizing online platforms to ensure they are user-friendly and aligned with organizational goals. Responsible for monitoring platform performance and making data-driven recommendations using HTML, CSS, JavaScript, and CMS.",
+    "skills": [
+      "Web Management",
+      "CMS",
+      "JavaScript",
+      "User Experience",
+      "Accessibility"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Graphic User Interface Designer",
+    "institution": "Hangaroa S. A.",
+    "place": "Remote",
+    "start": 1630454400,
+    "end": 1659312000,
+    "description": "Designed and implemented layouts and graphic materials for software projects. Collaborated with cross-functional teams and clients to publish content and documented strategies to improve user engagement.",
+    "skills": ["UI Design", "Layout", "User Engagement", "Cross-functional Teams"]
+  },
+  {
+    "type": "Work",
+    "tittle": "Multimedia Designer",
+    "institution": "Centre for Research, Development, and Innovation in Computer Systems (CIDIS)",
+    "place": "Ecuador",
+    "start": 1569888000,
+    "end": 1580515200,
+    "description": "Created mock-ups, storyboards, and digital assets for academic platforms, ensuring alignment with branding guidelines. Helped minimize technical issues through structured testing and file management.",
+    "skills": [
+      "Multimedia",
+      "Storyboarding",
+      "Mockups",
+      "Digital Assets",
+      "Branding"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Store Clerk",
+    "institution": "Petro Canada",
+    "place": "Canada",
+    "start": 1688169600,
+    "end": 1722470400,
+    "description": "Managed gas station operations independently. Collaborated with colleagues during peak times, maintained attendance and provided excellent customer service while operating cash registers and handling daily balance.",
+    "skills": ["Customer Service", "Cash Handling", "Reliability", "Teamwork"]
+  },
+  {
+    "type": "Work",
+    "tittle": "Network Laboratory Assistant",
+    "institution": "Faculty of Art, Design and Communications, ESPOL",
+    "place": "Ecuador",
+    "start": 1493596800,
+    "end": 1517443200,
+    "description": "Assisted in the technical maintenance and troubleshooting of equipment across five laboratories, ensuring smooth operation for students and staff.",
+    "skills": [
+      "Technical Support",
+      "Lab Maintenance",
+      "Equipment Troubleshooting"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Assistant",
+    "institution": "Lab of Computation, ESPOL",
+    "place": "Ecuador",
+    "start": 1493596800,
+    "end": 1525046400,
+    "description": "",
+    "skills": [
+      "Branding",
+      "Marketing",
+      "Design Visual Principles",
+      "Color Theory"
+    ]
+  }
+]

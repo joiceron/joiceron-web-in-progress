@@ -1,7 +1,7 @@
-import "./Project.scss";
+import "./ProjectItem.scss";
 import arrow from "../../assets/icons/star.svg";
 import { Link } from "react-router-dom";
-export default function Project({ project, image }) {
+export default function ProjectItem({ project, image }) {
   return (
     <article className="project">
       <div className="project">
@@ -12,7 +12,7 @@ export default function Project({ project, image }) {
         <p>{project.role}</p>
         <p>{project.description}</p>
         <ul>
-          {project.tags.map((tag, index) => (
+          {project.skills.map((tag, index) => (
             <li key={index}>{tag}</li>
           ))}
         </ul>

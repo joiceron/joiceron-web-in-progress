@@ -1,7 +1,7 @@
 import "./PortfolioPage.scss";
 import { useState } from "react";
-import Project from "../../components/Project/Project";
-import Photo from "../../components/Photo/Photo";
+import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import PhotoItem from "../../components/PhotoItem/PhotoItem";
 
 import webProjects from "../../data/web-projects-list.json";
 import gameProjects from "../../data/game-projects-list.json";
@@ -54,21 +54,6 @@ export default function PortfolioPage() {
     image04: draw04,
     image05: draw05,
   };
-
-  const images = [
-    {
-      original: "https://picsum.photos/id/1018/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
-    },
-  ];
 
   const [portfolioDoc, setPortfolioDoc] = useState("Web Development");
   return (
@@ -129,7 +114,7 @@ export default function PortfolioPage() {
 
         {portfolioDoc === industry[0] ? (
           webProjects.map((project) => (
-            <Project
+            <ProjectItem
               project={project}
               image={webImageMap[project.key]}
               key={project.key}
@@ -139,11 +124,11 @@ export default function PortfolioPage() {
           <div>PDF</div>
         ) : portfolioDoc === industry[2] ? (
           drawProjects.map((draw) => (
-            <Photo draw={draw} image={drawingsMap[draw.key]} key={draw.key} />
+            <PhotoItem draw={draw} image={drawingsMap[draw.key]} key={draw.key} />
           ))
         ) : (
           gameProjects.map((project) => (
-            <Project
+            <ProjectItem
               project={project}
               image={gameImageMap[project.key]}
               key={project.key}
