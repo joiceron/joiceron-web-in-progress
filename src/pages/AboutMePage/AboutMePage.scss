@@ -2,41 +2,4 @@
 @use "../../styles/partials/mixins.scss" as *;
 @use "../../styles/partials/globals.scss" as *;
 
-.portfolio {
-  @include tablet {
-    display: flex;
-  }
 
-  &__nav {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-
-    @include tablet {
-      width: 20rem;
-      flex-direction: column;
-    }
-    & li {
-      flex-grow: 1;
-      @include tablet {
-        flex-grow: 0;
-      }
-    }
-    &--button {
-      padding: 1.5rem 1rem;
-      border: 1px solid $color-purple-royal;
-      flex-grow: 1;
-      background-color: $color-pale;
-      width: 100%;
-      @include tablet {
-        border: 0;
-        border-bottom: 1px solid $color-purple-royal;
-        padding: 2rem 3rem;
-      }
-    }
-  }
-}
-
-.section {
-  @include padding-components;
-}

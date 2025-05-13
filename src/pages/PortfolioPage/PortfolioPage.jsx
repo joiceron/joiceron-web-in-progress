@@ -110,8 +110,6 @@ export default function PortfolioPage() {
       </ul>
 
       <section className="section">
-        <h3>{portfolioDoc}</h3>
-
         {portfolioDoc === industry[0] ? (
           webProjects.map((project) => (
             <ProjectItem
@@ -124,7 +122,11 @@ export default function PortfolioPage() {
           <div>PDF</div>
         ) : portfolioDoc === industry[2] ? (
           drawProjects.map((draw) => (
-            <PhotoItem draw={draw} image={drawingsMap[draw.key]} key={draw.key} />
+            <PhotoItem
+              draw={draw}
+              image={drawingsMap[draw.key]}
+              key={draw.key}
+            />
           ))
         ) : (
           gameProjects.map((project) => (

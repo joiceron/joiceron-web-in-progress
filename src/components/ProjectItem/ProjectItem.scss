@@ -2,7 +2,45 @@
 @use "../../styles/partials/mixins.scss" as *;
 @use "../../styles/partials/globals.scss" as *;
 
-.project {}
-.image{
-    height: 15rem;
+.project {
+  @include padding-components;
+  @include tablet {
+    display: flex;
+  }
+
+  &__img-box {
+    @include tablet {
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+
+    @include tablet {
+      object-position: center;
+      width: 35vw;
+      height: 35vw;
+    }
+  }
+
+  &__txt-box {
+    padding: 1rem 0;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+      width: 35vw;
+      height: 35vw;
+      border: 1px solid $color-pale;
+    }
+  }
+
+  &__skills {
+    margin: 1rem;
+    @include padding-components;
+  }
 }

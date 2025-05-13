@@ -11,7 +11,7 @@ export default function ExperienceItem({ experience }) {
         {experience.description}
       </p>
       {experience.skills.map((skill, index) => (
-        <spam key={index}>{skill}</spam>
+        <span key={index}>{skill}</span>
       ))}
     </section>
   );

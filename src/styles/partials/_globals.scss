@@ -12,9 +12,18 @@ html,
 body,
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: 0.8125rem;
+  font-weight: 500;
   color: $color-black;
+  // line-height: 1.2rem;
+
+  @include tablet {
+    font-size: 0.9375rem;
+  }
+
+  @include desktop {
+    font-size: 1rem;
+  }
 }
 
 h1 {
@@ -29,22 +38,25 @@ h2 {
   font-size: 1rem;
   font-weight: 600;
   color: $color-black;
+  line-height: 1.8rem;
 }
 
 h3 {
+  font-family: "Tsukimi Rounded", sans-serif;
   font-size: 1.125rem;
-  font-weight: 600;  
+  font-weight: 600;
   text-transform: uppercase;
   color: $color-candy;
+  line-height: 2rem;
 }
 
 h4 {
-  font-family: "Tsukimi Rounded", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 500;
+  line-height: 2rem;
+  margin: 0.5rem 0;
 }
-
-
 
 .button {
   @extend p;
@@ -56,6 +68,6 @@ h4 {
   }
 }
 
-.active{
+.active {
   background-color: $color-quartz;
 }

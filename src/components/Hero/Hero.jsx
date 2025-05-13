@@ -12,7 +12,7 @@ export default function Hero() {
     "Because light attracts bugs."
   );
   useEffect(() => {
-    fetchJoke();
+    // fetchJoke();
   }, []);
 
   const fetchJoke = async () => {
