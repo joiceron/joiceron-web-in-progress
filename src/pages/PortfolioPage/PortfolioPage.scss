@@ -3,7 +3,7 @@
 @use "../../styles/partials/globals.scss" as *;
 
 .portfolio {
-  @include tablet {
+  @include desktop {
     display: flex;
   }
 
@@ -12,13 +12,13 @@
     display: flex;
     flex-wrap: wrap;
 
-    @include tablet {
+    @include desktop {
       width: 20rem;
       flex-direction: column;
     }
     & li {
       flex-grow: 1;
-      @include tablet {
+      @include desktop {
         flex-grow: 0;
       }
     }
@@ -28,7 +28,7 @@
       flex-grow: 1;
       background-color: $color-pale;
       width: 100%;
-      @include tablet {
+      @include desktop {
         border: 0;
         border-bottom: 1px solid $color-purple-royal;
         padding: 2rem 3rem;

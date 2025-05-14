@@ -19,13 +19,15 @@ export default function ProjectItem({ project, image }) {
             ))}
           </ul>
         </div>
-        <div>
-          <Link to={project.link} className="project__">
-            <img src={arrow} alt="" /> Go to GitHub
+        <div className="project__box">
+          <Link to={project.link} className="project__link">
+            <img src={arrow} alt="" className="project__link--img" /> Go to
+            GitHub
           </Link>
           {project.link2 ? (
-            <Link to={project.link} className="project__">
-              <img src={arrow} alt="" /> Live Project
+            <Link to={project.link} className="project__link">
+              <img src={arrow} alt="" className="project__link--img" /> Live
+              Project
             </Link>
           ) : (
             ""

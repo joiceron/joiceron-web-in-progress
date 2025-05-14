@@ -1,0 +1,18 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/globals.scss" as *;
+
+.photo {
+  padding: 0.75rem;
+
+  &__img {
+    width: 100%;
+    @include desktop{
+        width: 100vh;
+    }
+  }
+  &__tittle {
+    margin-top: 0;
+    justify-self: end;
+  }
+}

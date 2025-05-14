@@ -4,8 +4,11 @@
 
 .project {
   @include padding-components;
+
   @include tablet {
     display: flex;
+    justify-content: center;
+    margin: auto;
   }
 
   &__img-box {
@@ -20,6 +23,11 @@
 
     @include tablet {
       object-position: center;
+      width: 40vw;
+      height: 35vw;
+    }
+
+    @include desktop {
       width: 35vw;
       height: 35vw;
     }
@@ -42,5 +50,24 @@
   &__skills {
     margin: 1rem;
     @include padding-components;
+  }
+
+  &__link {
+    // margin: 0 0.5rem;
+    padding: 0.2rem 1rem 0.2rem 0.2rem;
+    display: flex;
+    align-items: center;
+
+    &--img {
+      // border-bottom: 1px solid $color-purple-royal;
+
+      background-color: $color-quartz;
+      border-radius: 15px;
+      padding: 0.2rem;
+      margin-right: 0.5rem;
+    }
+  }
+  &__box {
+    display: flex;
   }
 }
