@@ -4,8 +4,23 @@
     "tittle": "Born",
     "institution": "",
     "place": "Ecuador",
-    "description": "T",
+    "description": "My live began",
     "skills": ["live"]
+  },
+  {
+    "type": "Education",
+    "tittle": "Fine Arts High School",
+    "institution": "J. J. Plaza",
+    "place": "Ecuador",
+    "start": 1451606400,
+    "end": 1609459200,
+    "description": "Girl discovers ART.",
+    "skills": [
+      "Branding",
+      "Marketing",
+      "Design Visual Principles",
+      "Color Theory"
+    ]
   },
   {
     "type": "Education",
@@ -22,60 +37,7 @@
       "Color Theory"
     ]
   },
-  {
-    "type": "Education",
-    "tittle": "Game Development Diploma",
-    "institution": "New Brunswick Community College (NBCC)",
-    "place": "Miramichi, NB",
-    "start": 1661990400,
-    "end": 1717200000,
-    "description": "The Game Development program at NBCC equipped me with practical skills in game design, programming, and production. Through team projects, I developed strong collaboration and problem-solving abilities, preparing me to contribute creatively and technically to the fast-paced gaming industry.",
-    "skills": ["Game Design", "Programming", "Team Projects", "Game Production"]
-  },
-  {
-    "type": "Education",
-    "tittle": "Software Engineering Diploma",
-    "institution": "BrainStation",
-    "place": "Toronto, ON",
-    "start": 1730419200,
-    "end": 1738368000,
-    "description": "In BrainStation's Software Engineering bootcamp, I learned key software engineering concepts and computer science fundamentals. I gained hands-on experience with HTML, CSS, Terminal, React, MySQL, and I learned to create multi-page web products from scratch using tools like BEM, Flexbox, Sass, and Git.",
-    "skills": [
-      "Software Engineering",
-      "Web Development",
-      "React",
-      "HTML",
-      "CSS",
-      "Git",
-      "MySQL"
-    ]
-  },
-  {
-    "type": "Work",
-    "tittle": "Virtual Platform Specialist",
-    "institution": "STEM Montessori Academy of Canada",
-    "place": "Remote",
-    "start": 1451606400,
-    "end": 1609459200,
-    "description": "Developing, managing, and optimizing online platforms to ensure they are user-friendly and aligned with organizational goals. Responsible for monitoring platform performance and making data-driven recommendations using HTML, CSS, JavaScript, and CMS.",
-    "skills": [
-      "Web Management",
-      "CMS",
-      "JavaScript",
-      "User Experience",
-      "Accessibility"
-    ]
-  },
-  {
-    "type": "Work",
-    "tittle": "Graphic User Interface Designer",
-    "institution": "Hangaroa S. A.",
-    "place": "Remote",
-    "start": 1630454400,
-    "end": 1659312000,
-    "description": "Designed and implemented layouts and graphic materials for software projects. Collaborated with cross-functional teams and clients to publish content and documented strategies to improve user engagement.",
-    "skills": ["UI Design", "Layout", "User Engagement", "Cross-functional Teams"]
-  },
+
   {
     "type": "Work",
     "tittle": "Multimedia Designer",
@@ -129,6 +91,65 @@
       "Marketing",
       "Design Visual Principles",
       "Color Theory"
+    ]
+  },
+  {
+    "type": "Education",
+    "tittle": "Game Development Diploma",
+    "institution": "New Brunswick Community College (NBCC)",
+    "place": "Miramichi, NB",
+    "start": 1661990400,
+    "end": 1717200000,
+    "description": "The Game Development program at NBCC equipped me with practical skills in game design, programming, and production. Through team projects, I developed strong collaboration and problem-solving abilities, preparing me to contribute creatively and technically to the fast-paced gaming industry.",
+    "skills": ["Game Design", "Programming", "Team Projects", "Game Production"]
+  },
+  {
+    "type": "Work",
+    "tittle": "Virtual Platform Specialist",
+    "institution": "STEM Montessori Academy of Canada",
+    "place": "Remote",
+    "start": 1451606400,
+    "end": 1609459200,
+    "description": "Developing, managing, and optimizing online platforms to ensure they are user-friendly and aligned with organizational goals. Responsible for monitoring platform performance and making data-driven recommendations using HTML, CSS, JavaScript, and CMS.",
+    "skills": [
+      "Web Management",
+      "CMS",
+      "JavaScript",
+      "User Experience",
+      "Accessibility"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Graphic User Interface Designer",
+    "institution": "Hangaroa S. A.",
+    "place": "Remote",
+    "start": 1630454400,
+    "end": 1659312000,
+    "description": "Designed and implemented layouts and graphic materials for software projects. Collaborated with cross-functional teams and clients to publish content and documented strategies to improve user engagement.",
+    "skills": [
+      "UI Design",
+      "Layout",
+      "User Engagement",
+      "Cross-functional Teams"
+    ]
+  },
+  {
+    "type": "Education",
+    "tittle": "Software Engineering Diploma",
+    "institution": "BrainStation",
+    "place": "Toronto, ON",
+    "start": 1730419200,
+    "end": 1738368000,
+    "description": "In BrainStation's Software Engineering bootcamp, I learned key software engineering concepts and computer science fundamentals. I gained hands-on experience with HTML, CSS, Terminal, React, MySQL, and I learned to create multi-page web products from scratch using tools like BEM, Flexbox, Sass, and Git.",
+    "skills": [
+      "Software Engineering",
+      "Web Development",
+      "React",
+      "HTML",
+      "CSS",
+      "Git",
+      "MySQL"
     ]
   }
 ]

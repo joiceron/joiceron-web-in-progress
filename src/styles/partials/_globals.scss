@@ -15,7 +15,7 @@ p {
   font-size: 0.8125rem;
   font-weight: 500;
   color: $color-black;
-  // line-height: 1.2rem;
+  line-height: 1.1rem;
 
   @include tablet {
     font-size: 0.9375rem;
@@ -55,7 +55,6 @@ h4 {
   font-size: 13px;
   font-weight: 500;
   line-height: 2rem;
-  margin: 0.5rem 0;
 }
 
 .button {

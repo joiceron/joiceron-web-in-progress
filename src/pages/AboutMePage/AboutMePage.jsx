@@ -3,12 +3,12 @@ import { useState } from "react";
 import ExperienceItem from "../../components/ExperienceItem/ExperienceItem";
 import experiencesList from "../../data/experiences-list.json";
 
-export default function PortfolioPage() {
+export default function AboutMePage() {
   return (
-    <main className="about-me">
-      <section className="profile">
-        <h3 className="profile">Profile</h3>
-        <p className="profile">
+    <main className="about">
+      <section className="about__profile">
+        <h3 className="about__profile--tittle">Profile</h3>
+        <p className="about__profile--detail">
           Hi! I'm Joice Ceron I am a detail-oriented, UI/UX Designer & Software
           Development. My passion for art and visual experiences fuels my belief
           in the power of graphic design as a communication tool. However, I
