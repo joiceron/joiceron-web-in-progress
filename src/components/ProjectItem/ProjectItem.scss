@@ -3,12 +3,17 @@
 @use "../../styles/partials/globals.scss" as *;
 
 .project {
+  margin: 0;
   @include padding-components;
 
   @include tablet {
     display: flex;
     justify-content: center;
     margin: auto;
+  }
+  
+  @include desktop {
+  padding: 0;
   }
 
   &__img-box {
@@ -41,9 +46,13 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 2rem;
-      width: 35vw;
+      width: 40vw;
       height: 35vw;
       border: 1px solid $color-pale;
+    }
+
+    @include desktop {
+      width: 35vw;
     }
   }
 
@@ -53,20 +62,18 @@
   }
 
   &__link {
-    // margin: 0 0.5rem;
     padding: 0.2rem 1rem 0.2rem 0.2rem;
     display: flex;
     align-items: center;
 
     &--img {
-      // border-bottom: 1px solid $color-purple-royal;
-
       background-color: $color-quartz;
       border-radius: 15px;
       padding: 0.2rem;
       margin-right: 0.5rem;
     }
   }
+
   &__box {
     display: flex;
   }
