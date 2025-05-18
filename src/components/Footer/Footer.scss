@@ -8,14 +8,12 @@
 
   &__txt {
     margin: auto;
-    // display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 
     &--link {
       padding: 1rem;
-    //   width: 25%;
       height: 5rem;
       display: flex;
       align-items: center;

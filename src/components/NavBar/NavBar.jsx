@@ -11,17 +11,17 @@ export default function NavBar() {
 
   return (
     <nav className="header">
-      <div className="header__tittle">
-        <Link className="header__logo" to={"/"}>
+      <div className="logo">
+        <Link className="logo__link" to={"/"}>
           <img
             src={joiceronLogo}
-            className="header__logo--icon"
+            className="logo__link--icon"
             alt="Vite logo"
           />
-          <h1 className="header__logo--text">joiceron</h1>
+          <h1>joiceron</h1>
         </Link>
         {!isAsideDisplayed ? (
-          <button className="header__menu" onClick={handleToggleAside}>
+          <button className="header__toggle" onClick={handleToggleAside}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -32,13 +32,13 @@ export default function NavBar() {
             </svg>
           </button>
         ) : (
-          <button className="header__menu" onClick={handleToggleAside}>
+          <button className="header__toggle" onClick={handleToggleAside}>
             <span className="material-symbols-outlined">close</span>
           </button>
         )}
       </div>
 
-      <ul className={isAsideDisplayed ? "nav" : "nav aside--hide"}>
+      <ul className={`nav ${isAsideDisplayed ? "" : "aside--hide"}`}>
         <li className="nav__button ">
           <NavLink className="nav__button--link button" to={"/Portfolio"}>
             Portfolio
@@ -59,6 +59,7 @@ export default function NavBar() {
             to="https://www.linkedin.com/in/joiceron"
             target="_blank"
             rel="noopener noreferrer"
+            className="nav__button--link button"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

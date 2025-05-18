@@ -4,7 +4,7 @@
 
 .project {
   margin: 0;
-  @include padding-components;
+  @include padding;
 
   @include tablet {
     display: flex;
@@ -58,7 +58,7 @@
 
   &__skills {
     margin: 1rem;
-    @include padding-components;
+    @include padding;
   }
 
   &__link {

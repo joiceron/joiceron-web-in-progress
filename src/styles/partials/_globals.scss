@@ -2,17 +2,24 @@
 @use "mixins" as *;
 @use "fonts" as *;
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 html,
-body,
+body {
+  margin: 0;
+  min-width: $mobile-min-breakpoint;
+  background-color: $color-white-whisper;
+  font-family: "Montserrat", sans-serif;
+  color: $color-black;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: $color-black;
   line-height: 1.1rem;
@@ -28,33 +35,51 @@ p {
 
 h1 {
   font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
   color: $color-purple-royal;
+  font-size: 1rem;
+  font-weight: 500;
+  
+  @include tablet {
+    font-size: 1.5rem;
+  }
 }
 
 h2 {
   font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: $color-black;
-  line-height: 1.8rem;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  font-weight: 500;
+
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
 }
 
 h3 {
   font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
   text-transform: uppercase;
   color: $color-candy;
-  line-height: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  font-weight: 500;
+
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
 }
 
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
   font-weight: 500;
-  line-height: 2rem;
+
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
 }
 
 .button {

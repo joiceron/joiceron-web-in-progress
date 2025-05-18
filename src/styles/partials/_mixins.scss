@@ -12,14 +12,26 @@
   }
 }
 
-@mixin padding-components {
-  padding: 0 1.5rem;
+@mixin padding {
+  padding: 1rem;
+
+  @include tablet {
+    padding: 1rem 1.5rem;
+  }
+
+  @include desktop {
+    padding: 2 2.5rem;
+  }
+}
+
+@mixin padding-sides {
+  padding: 0 1rem;
 
   @include tablet {
     padding: 0 1.5rem;
   }
 
   @include desktop {
-    // padding: 0 2.5rem;
+    padding: 0 2.5rem;
   }
 }
