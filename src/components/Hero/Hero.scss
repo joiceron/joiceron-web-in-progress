@@ -3,45 +3,35 @@
 @use "../../styles/partials/globals.scss" as *;
 
 .hero {
-  display: flex;
   position: relative;
 
   &__bg {
     z-index: 0;
-    margin: auto;
     width: 100vw;
-    max-height: 40vh;
+    max-height: 35vh;
+    opacity: 25%;
     object-fit: cover;
+
+    @include tablet {
+      max-height: 40vh;
+    }
   }
 
   &__joke {
     position: absolute;
-    padding-right: 1rem;
     z-index: 1;
     left: 10%;
-    top: 35%;
-
-    &--set-up {
-      font-size: 0.875rem;
-
-      @include tablet {
-        font-size: 1.375rem;
-      }
-
-      @include desktop {
-        font-size: 2.25rem;
-      }
-    }
+    top: 25%;
 
     &--punch-line {
+        padding-top: 0.5rem;
       @include tablet {
-        font-size: 1.125rem;
-        padding-top: 1rem;
+        // font-size: 1.125rem;
       }
 
       @include desktop {
-        font-size: 1.5rem;
-        padding-top: 1.5rem;
+        // font-size: 1.5rem;/
+        // padding-top: 1.5rem;
       }
     }
   }

@@ -41,10 +41,11 @@ h1 {
   
   @include tablet {
     font-size: 1.5rem;
+  line-height: 1.4375rem;
   }
 }
 
-h2 {
+.emphasis {
   font-family: "Tsukimi Rounded", sans-serif;
   font-size: 1.125rem;
   line-height: 1.4375rem;
@@ -56,7 +57,7 @@ h2 {
   }
 }
 
-h3 {
+h2 {
   font-family: "Tsukimi Rounded", sans-serif;
   text-transform: uppercase;
   color: $color-candy;
@@ -70,7 +71,7 @@ h3 {
   }
 }
 
-h4 {
+h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   line-height: 1.4375rem;

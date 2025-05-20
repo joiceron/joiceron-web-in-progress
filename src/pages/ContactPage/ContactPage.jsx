@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <main className="contact">
       <section className="">
-        <h3 className="contact__title">Happy to work together {"<"}3 </h3>
+        <h2 className="contact__title">Happy to work together {"<"}3 </h2>
         <p className="">
         </p>
       </section>

@@ -4,29 +4,35 @@ import { Link } from "react-router-dom";
 export default function ProjectItem({ project, image }) {
   return (
     <article className="project">
-      <div className="project__img-box">
-        <img src={image} alt={`${image} preview`} className="project__image" />
+      <div className="project__multimedia">
+        <img
+          src={image}
+          alt={`${image} preview`}
+          className="project__multimedia--image"
+        />
       </div>
 
-      <div className="project__txt-box">
+      <div className="content">
         <div>
-          <h3 className="project__tittle">{project.tittle}</h3>
-          <h4 className="project__">{project.role}</h4>
-          <p className="project__">{project.description}</p>
-          <ul className="project__skills">
+          <h2 className="content__tittle">{project.tittle}</h2>
+          <h3 className="">{project.role}</h3>
+          <p className="">{project.description}</p>
+          <ul className="content__skills">
             {project.skills.map((tag, index) => (
-              <li key={index}>{tag}</li>
+              <li className="content__skill" key={index}>
+                {tag}
+              </li>
             ))}
           </ul>
         </div>
-        <div className="project__box">
-          <Link to={project.link} className="project__link">
-            <img src={arrow} alt="" className="project__link--img" /> Go to
+        <div className="content__link">
+          <Link to={project.link} className="content__link--text">
+            <img src={arrow} alt="" className="content__link--img" /> Go to
             GitHub
           </Link>
           {project.link2 ? (
-            <Link to={project.link} className="project__link">
-              <img src={arrow} alt="" className="project__link--img" /> Live
+            <Link to={project.link} className="content__link--text">
+              <img src={arrow} alt="" className="content__link--img" /> Live
               Project
             </Link>
           ) : (

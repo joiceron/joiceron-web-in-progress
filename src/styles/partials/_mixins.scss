@@ -12,6 +12,11 @@
   }
 }
 
+@mixin border {
+  border-top: 1px solid $color-pale;
+  border-bottom: 1px solid $color-pale;
+}
+
 @mixin padding {
   padding: 1rem;
 

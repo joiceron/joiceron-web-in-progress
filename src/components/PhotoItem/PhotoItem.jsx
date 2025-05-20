@@ -1,10 +1,11 @@
 import "./PhotoItem.scss";
 
-export default function PhotoItem({draw , image}) {
+export default function PhotoItem({ draw, image }) {
   return (
     <div className="photo">
-      <img className="photo__img" src={image} alt={`${{image}} preview`} />
-      <h4 className="photo__tittle">{draw.tittle}</h4>
+      <img className="photo__img" src={image} alt={`${{ image }} preview`} />
+      <p className="photo__tittle">{draw.tittle}</p>
+      <small className="photo__tittle--description">{draw.technique}</small>
     </div>
   );
 }

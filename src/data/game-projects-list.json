@@ -1,7 +1,7 @@
 [
   {
     "key": "game00",
-    "tittle": "HuntingCat",
+    "tittle": "Hunting Cat",
     "link": "https://github.com/joiceron/HuntingCat/tree/main/HuntingCat",
     "description": "Game built in Python with customized art",
     "skills": ["C++", "Phython"]
@@ -22,18 +22,18 @@
   },
   {
     "key": "game02",
+    "tittle": "Asteroids",
+    "link": "https://github.com/joiceron/Asteroids",
+    "description": "Retro game made in C++, Blitz3D engine. Customized art.",
+    "skills": ["C++", "Photoshop"]
+  },
+  {
+    "key": "game03",
     "tittle": "Canguil",
     "link": "https://maubass2891.itch.io/canguils-adventure",
     "description": "This was my first participation in a GameJame",
     "skills": ["Photoshop", "Piskel", "GlueIT", "LibreSprite"],
     "role": "Lead Artist"
-  },
-  {
-    "key": "game03",
-    "tittle": "Asteroids",
-    "link": "https://github.com/joiceron/Asteroids",
-    "description": "Retro game made in C++, Blitz3D engine. Customized art.",
-    "skills": ["C++", "Photoshop"]
   },
   {
     "key": "game04",
@@ -44,7 +44,7 @@
   },
   {
     "key": "game05",
-    "tittle": "GoofyGroovers",
+    "tittle": "Goofy Groovers",
     "link": "https://sebastiancanseco.itch.io/goofygroovers",
     "description": "GoofyGroovers invites you to a multiplayer pixel art experience where you and your friends compete in a race.",
     "skills": ["LibreSprite", "C#", "Photoshop"]

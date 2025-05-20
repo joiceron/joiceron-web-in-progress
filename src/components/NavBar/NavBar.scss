@@ -5,6 +5,7 @@
 .header {
   justify-content: space-between;
   flex-direction: column;
+  @include border;
 
   @include tablet {
     display: flex;

@@ -7,12 +7,18 @@
 
   &__img {
     width: 100%;
-    @include desktop{
-        width: 100vh;
+    @include desktop {
+      width: 100vh;
     }
   }
+
   &__tittle {
-    margin-top: 0;
     justify-self: end;
+    margin: 0.3rem 0;
+
+    &--description {
+          display: block;
+      justify-self: end;
+    }
   }
 }
