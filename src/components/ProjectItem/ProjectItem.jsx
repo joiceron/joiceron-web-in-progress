@@ -1,5 +1,5 @@
 import "./ProjectItem.scss";
-import arrow from "../../assets/icons/star.svg";
+import arrow from "../../assets/icons/link-icon.svg";
 import { Link } from "react-router-dom";
 export default function ProjectItem({ project, image }) {
   return (
@@ -27,12 +27,12 @@ export default function ProjectItem({ project, image }) {
         </div>
         <div className="content__link">
           <Link to={project.link} className="content__link--text">
-            <img src={arrow} alt="" className="content__link--img" /> Go to
+            <img src={arrow} alt="link icon" className="content__link--img" /> Go to
             GitHub
           </Link>
           {project.link2 ? (
             <Link to={project.link} className="content__link--text">
-              <img src={arrow} alt="" className="content__link--img" /> Live
+              <img src={arrow} alt="link icon" className="content__link--img" /> Live
               Project
             </Link>
           ) : (

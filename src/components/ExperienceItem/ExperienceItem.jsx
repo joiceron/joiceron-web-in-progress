@@ -5,7 +5,7 @@ export default function ExperienceItem({ experience }) {
   return (
     <section className="experience">
       <div className="experience__icon-box">
-        <img src={`${experience.type=="Education" ? eduIcon : workIcon }`} alt="" className="experience__icon" />
+        <img src={`${experience.type=="Education" ? eduIcon : workIcon }`} alt={`${experience.type=="Education" ? "Work suitcase Icon" : "Cap graduation Icon" }`} className="experience__icon" />
       </div>
 
       <div className="experience__text">

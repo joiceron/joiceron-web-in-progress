@@ -17,7 +17,7 @@ export default function NavBar() {
           <img
             src={joiceronLogo}
             className="logo__link--icon"
-            alt="Vite logo"
+            alt="Flower logo"
           />
           <h1 className="">joiceron</h1>
         </Link>
@@ -28,13 +28,16 @@ export default function NavBar() {
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
+              alt="hamburger icon"
             >
               <path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z" />
             </svg>
           </button>
         ) : (
           <button className="header__toggle" onClick={handleToggleAside}>
-            <span className="material-symbols-outlined">close</span>
+            <span className="material-symbols-outlined" alt="ex icon">
+              close
+            </span>
           </button>
         )}
       </div>
@@ -62,7 +65,11 @@ export default function NavBar() {
             rel="noopener noreferrer"
             className="nav__button--link button"
           >
-            <img className="nav__button--icon" src={linkedInIcon} alt="" />
+            <img
+              className="nav__button--icon"
+              src={linkedInIcon}
+              alt="LinkedIn logo"
+            />
           </Link>
         </li>
       </ul>

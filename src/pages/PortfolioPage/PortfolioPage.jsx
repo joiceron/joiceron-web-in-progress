@@ -150,7 +150,7 @@ export default function PortfolioPage() {
             ))
           : portfolioDoc === industry[1]
           ? disImagMap.map((image, index) => (
-              <img className="pdf-image" src={image} alt="" key={index} />
+              <img className="pdf-image" src={image} alt={`Portfolio page num ${index}`} key={index} />
             ))
           : portfolioDoc === industry[2]
           ? drawProjects.map((draw) => (

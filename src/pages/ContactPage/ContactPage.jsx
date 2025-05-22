@@ -18,7 +18,7 @@ export default function ContactPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="contact__txt--icon" src={mailIcon} />
+          <img className="contact__txt--icon" src={mailIcon} alt="Envelop icon"/>
          joiceron@hotmail.com
         </a>
 
@@ -28,7 +28,7 @@ export default function ContactPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="contact__txt--icon" src={linkedInIcon} />
+          <img className="contact__txt--icon" src={linkedInIcon} alt="LinkedIn logo" />
 
        LinkedIn.com/joiceron
         </a>
@@ -39,7 +39,7 @@ export default function ContactPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="contact__txt--icon" src={gitHubIcon} />
+          <img className="contact__txt--icon" src={gitHubIcon} alt="GitHub logo" />
 
          Github.com/joiceron
         </a>
@@ -49,7 +49,7 @@ export default function ContactPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="contact__txt--icon" src={downloadIcon} />
+          <img className="contact__txt--icon" src={downloadIcon}  alt="Arrow icon"/>
 
           Download Resume
         </a>
