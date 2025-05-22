@@ -7,7 +7,7 @@
 
   &__bg {
     z-index: 0;
-    width: 100vw;
+    width: 100%;
     max-height: 35vh;
     opacity: 25%;
     object-fit: cover;
@@ -23,16 +23,12 @@
     left: 10%;
     top: 25%;
 
-    &--punch-line {
-        padding-top: 0.5rem;
-      @include tablet {
-        // font-size: 1.125rem;
-      }
+    &--set-up {
+      color: $color-purple-royal;
+    }
 
-      @include desktop {
-        // font-size: 1.5rem;/
-        // padding-top: 1.5rem;
-      }
+    &--punch-line {
+      padding-top: 0.5rem;
     }
   }
 }

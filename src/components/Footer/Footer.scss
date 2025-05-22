@@ -4,7 +4,11 @@
 .footer {
   background-color: $color-pale;
   margin-top: 2rem;
-  width: 100%;
+  padding:3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   &__txt {
     margin: auto;
@@ -21,16 +25,7 @@
       border: 1px solid $color-pale;
       text-align: center;
       color: $color-candy;
-        border: 1px solid $color-white-whisper;
-    }
-
-    &--copy {
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: $color-candy;
+      border: 1px solid $color-white-whisper;
     }
   }
 }

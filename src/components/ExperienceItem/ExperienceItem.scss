@@ -2,25 +2,51 @@
 @use "../../styles/partials/mixins.scss" as *;
 
 .experience {
-    margin-left: 3rem;
-    border-left: 3px solid $color-quartz;
-    padding-left: 1rem 0;
+  margin-left: 2rem;
+  border-left: 3px solid $color-quartz;
 
-  &__icon{
+  @include tablet {
+    display: flex;
+    margin-left: 3rem;
+  }
+
+  &__icon-box {
     margin-left: (-1.5rem);
   }
 
-  &__img {
+  &__icon {
     width: 3rem;
-    background-color: $color-pale;
+    background-color: $color-quartz;
     border-radius: 20px;
     padding: 0.2rem;
     margin-right: 0.5rem;
     margin-top: 1rem;
-    border: 3px solid $color-quartz;
+    padding: 0.3rem;
+
+    @include tablet {
+      margin-top: 1.5rem;
+    }
   }
-  
-  &__text{
-    padding: 0.5rem 1rem 1.5rem 1rem;
+
+  &__text {
+    padding: 0 1rem 1.5rem 1rem;
+    margin-top: -0.5rem;
+
+    @include tablet {
+      margin-top: 0;
+      @include padding;
+    }
+
+    &--title {
+      color: $color-purple-royal;
+    }
+  }
+
+  &__skills {
+    @include skills;
+  }
+
+  &__skill {
+    @include skill;
   }
 }

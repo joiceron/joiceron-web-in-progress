@@ -4,11 +4,12 @@
     "tittle": "Hunting Cat",
     "link": "https://github.com/joiceron/HuntingCat/tree/main/HuntingCat",
     "description": "Game built in Python with customized art",
+    "role": "Programmer",
     "skills": ["C++", "Phython"]
   },
   {
     "key": "game01",
-    "tittle": "TacoTour",
+    "tittle": "Taco Tour",
     "link": "https://github.com/Sara-Ho99/trivia-quiz",
     "description": "Interdiciplinary project where I work as a lead-artist and animator",
     "skills": [

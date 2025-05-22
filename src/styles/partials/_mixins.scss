@@ -12,6 +12,22 @@
   }
 }
 
+@mixin skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+@mixin skill {
+  margin: 0 0.2rem 0.5rem 0;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  background-color: $color-pale;
+  border-radius: 3px;
+  width: auto;
+  display: inline;
+}
+
 @mixin border {
   border-top: 1px solid $color-pale;
   border-bottom: 1px solid $color-pale;

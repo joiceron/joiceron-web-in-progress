@@ -3,6 +3,41 @@
 @use "../../styles/partials/globals.scss" as *;
 
 .contact {
-  display: flex;
-  justify-content: center;
+  &__title {
+    background-color: $color-black;
+    @include padding;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__txt {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &--link {
+      width: 50%;
+      height: 40vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-decoration: none;
+      border: 1px solid $color-pale;
+
+      @include desktop {
+        width: 25%;
+        height: 20vw;
+      }
+    }
+
+    &--icon {
+      height: 2.5rem;
+      background-color: $color-white-whisper;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+  }
 }

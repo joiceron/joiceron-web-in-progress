@@ -4,15 +4,17 @@
 
 .about {
   &__profile {
-    padding: 1.5rem 3rem 0;
     background-color: $color-black;
-    
-    &--detail {
-      justify-content: center;
+    @include padding;
+
+    &--title {
       color: $color-quartz;
-      padding-left: 1rem;
-      padding-bottom: 1.5rem;
-      border-left: 2px solid $color-quartz;
+    }
+
+    &--detail {
+      color: $color-quartz;
+      max-width: $tablet-breakpoint;
+      @include padding;
     }
   }
 }

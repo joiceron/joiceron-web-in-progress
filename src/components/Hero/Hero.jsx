@@ -12,7 +12,7 @@ export default function Hero() {
     "Because light attracts bugs."
   );
   useEffect(() => {
-    // fetchJoke();
+    fetchJoke();
   }, []);
 
   const fetchJoke = async () => {
@@ -66,7 +66,7 @@ export default function Hero() {
       <div className="hero">
         <img className="hero__bg" src={bgHero2} alt="background with flowers" />
         <div className="hero__joke">
-          <div className="hero__joke--set-up emphasis">{jokeSetup}</div>
+          <div className="emphasis hero__joke--set-up ">{jokeSetup}</div>
           <p className="hero__joke--punch-line ">{jokePunchline}</p>
         </div>
       </div>

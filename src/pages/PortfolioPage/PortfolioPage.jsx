@@ -7,7 +7,7 @@ import webProjects from "../../data/web-projects-list.json";
 import gameProjects from "../../data/game-projects-list.json";
 import drawProjects from "../../data/draw-projects-list.json";
 
-import webApiHackatonImg from "/web-dev-images/web-api-hackaton.jpg";
+import webApiHackatonImg from "/web-dev-images/web-api-hackaton.png";
 import budgetBloomImg from "/web-dev-images/budget-bloom.png";
 
 import draw00 from "/drawing-images/image00.jpg";
@@ -25,18 +25,17 @@ import gameImg04 from "/game-images/img-4.jpg";
 import gameImg05 from "/game-images/img-5.jpg";
 
 import disImg00 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0001.jpg";
-// import disImg01 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0002.jpg";
-import disImg02 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0003.jpg";
-import disImg03 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0004.jpg";
-import disImg04 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0005.jpg";
-import disImg05 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0006.jpg";
-import disImg06 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0007.jpg";
-import disImg07 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0008.jpg";
-import disImg08 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0009.jpg";
-import disImg09 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0010.jpg";
-import disImg10 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0011.jpg";
-import disImg11 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0012.jpg";
-import disImg12 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0013.jpg";
+import disImg01 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0003.jpg";
+import disImg02 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0004.jpg";
+import disImg03 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0005.jpg";
+import disImg04 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0006.jpg";
+import disImg05 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0007.jpg";
+import disImg06 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0008.jpg";
+import disImg07 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0009.jpg";
+import disImg08 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0010.jpg";
+import disImg09 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0011.jpg";
+import disImg10 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0012.jpg";
+import disImg11 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0013.jpg";
 
 export default function PortfolioPage() {
   const industry = [
@@ -70,8 +69,8 @@ export default function PortfolioPage() {
   };
 
   const disImagMap = [
-    // disImg01,
     disImg00,
+    disImg01,
     disImg02,
     disImg03,
     disImg04,
@@ -82,7 +81,6 @@ export default function PortfolioPage() {
     disImg09,
     disImg10,
     disImg11,
-    disImg12,
   ];
 
   const [portfolioDoc, setPortfolioDoc] = useState("Web Development");
@@ -152,7 +150,7 @@ export default function PortfolioPage() {
             ))
           : portfolioDoc === industry[1]
           ? disImagMap.map((image, index) => (
-              <img className="pdf-image" src={image} alt=""  key={index}/>
+              <img className="pdf-image" src={image} alt="" key={index} />
             ))
           : portfolioDoc === industry[2]
           ? drawProjects.map((draw) => (

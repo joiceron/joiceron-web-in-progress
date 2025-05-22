@@ -17,13 +17,13 @@ export default function ProjectItem({ project, image }) {
           <h2 className="content__tittle">{project.tittle}</h2>
           <h3 className="">{project.role}</h3>
           <p className="">{project.description}</p>
-          <ul className="content__skills">
+          <div className="content__skills">
             {project.skills.map((tag, index) => (
-              <li className="content__skill" key={index}>
+              <p className="content__skill" key={index}>
                 {tag}
-              </li>
+              </p>
             ))}
-          </ul>
+          </div>
         </div>
         <div className="content__link">
           <Link to={project.link} className="content__link--text">
