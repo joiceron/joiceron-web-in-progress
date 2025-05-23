@@ -5,6 +5,7 @@
 .contact {
   &__title {
     background-color: $color-black;
+    color: $color-quartz;
     @include padding;
 
     @include tablet {

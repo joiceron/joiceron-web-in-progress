@@ -1,5 +1,5 @@
 import "./ProjectItem.scss";
-import arrow from "../../assets/icons/link-icon.svg";
+import link from "../../assets/icons/link-icon.svg";
 import { Link } from "react-router-dom";
 export default function ProjectItem({ project, image }) {
   return (
@@ -14,7 +14,14 @@ export default function ProjectItem({ project, image }) {
 
       <div className="content">
         <div>
-          <h2 className="content__tittle">{project.tittle}</h2>
+          <Link
+            className="content__tittle-link"
+            to={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className="content__tittle">{project.tittle}</h2>
+          </Link>
           <h3 className="">{project.role}</h3>
           <p className="">{project.description}</p>
           <div className="content__skills">
@@ -26,14 +33,22 @@ export default function ProjectItem({ project, image }) {
           </div>
         </div>
         <div className="content__link">
-          <Link to={project.link} className="content__link--text">
-            <img src={arrow} alt="link icon" className="content__link--img" /> Go to
-            GitHub
+          <Link
+            to={project.link}
+            className="content__link--text"
+            target="_blank"
+          >
+            <img src={link} alt="link icon" className="content__link--img" />{" "}
+            Go to Repository
           </Link>
           {project.link2 ? (
-            <Link to={project.link} className="content__link--text">
-              <img src={arrow} alt="link icon" className="content__link--img" /> Live
-              Project
+            <Link
+              to={project.link2}
+              className="content__link--text"
+              target="_blank"
+            >
+              <img src={link} alt="link icon" className="content__link--img" />{" "}
+              Live Project
             </Link>
           ) : (
             ""

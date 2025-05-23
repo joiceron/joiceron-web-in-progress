@@ -6,7 +6,7 @@
     "link": "https://github.com/joiceron/budget-bloom",
     "link2": "https://joiceron.github.io/budget-bloom/",
     "description": "Designed, developed and maintained a budget planner using modular components with React.js, MySQL, and Knex. Integrated RESTful APIs and ensured scalability with GitHub backups.",
-    "skills": ["Node.js", "MySQL", "REST API", "React"]
+    "skills": ["React", "Knex", "Node.js", "MySQL", "API", "Figma"]
   },
   {
     "tittle": "Web API Hackathon",

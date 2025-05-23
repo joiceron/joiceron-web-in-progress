@@ -1,96 +1,38 @@
 [
   {
-    "type": "Education",
-    "tittle": "Bachelor's Degree of Graphic Design",
-    "institution": "ESPOL",
-    "place": "Ecuador",
-    "start": "2016",
-    "end": "2021",
-    "description": "The Graphic Design program at ESPOL provided a strong foundation in visual communication, digital media, and design principles. I gained hands-on experience in branding, illustration, and multimedia, developing skills that enable me to craft compelling, visually impactful designs for diverse media platforms.",
-    "skills": [
-      "Branding",
-      "Marketing",
-      "Design Visual Principles",
-      "Color Theory"
-    ]
-  },
-  {
     "type": "Work",
-    "tittle": "Computer Lab Assistant",
-    "institution": "ESPOL",
-    "place": "Ecuador",
-    "start": "May 2017 ",
-    "end": "Apr 2018",
-    "description": "",
-    "skills": [
-      "Branding",
-      "Marketing",
-      "Design Visual Principles",
-      "Color Theory"
-    ]
-  },
-  {
-    "type": "Work",
-    "tittle": "Graphic Designer",
-    "institution": "ESPOL",
-    "place": "Ecuador",
-    "start": "May 2018",
-    "end": "Sep 2018",
-    "description": "",
-    "skills": [
-      "Branding",
-      "Marketing",
-      "Design Visual Principles",
-      "Color Theory"
-    ]
-  },
-  {
-    "type": "Work",
-    "tittle": "Digital Designer",
-    "institution": "Uno Porciento Agengy",
-    "place": "Ecuador",
-    "start": "Jun 2019",
-    "end": "Sep 2019",
-    "description": "",
-    "skills": [
-      "Branding",
-      "Marketing",
-      "Design Visual Principles",
-      "Color Theory"
-    ]
-  },
-  {
-    "type": "Work",
-    "tittle": "Web Multimedia Designer",
-    "institution": "Centre for Research, Development, and Innovation in Computer Systems",
-    "place": "Ecuador",
-    "start": "Oct 2019",
-    "end": "Feb 2020",
-    "description": "Created mock-ups, storyboards, and digital assets for academic platforms, ensuring alignment with branding guidelines. Helped minimize technical issues through structured testing and file management.",
-    "skills": [
-      "Multimedia",
-      "Storyboarding",
-      "Mockups",
-      "Digital Assets",
-      "Branding"
-    ]
-  },
-  {
-    "type": "Work",
-    "tittle": "Graphic User Interface Designer",
-    "institution": "Hangaroa S. A.",
+    "tittle": "Web Developer",
+    "institution": "STEM Montessori Academy of Canada",
     "place": "Remote",
-    "start": "Sep 2021",
-    "end": "Aug 2022",
-    "description": "Designed and implemented layouts and graphic materials for software projects. Collaborated with cross-functional teams and clients to publish content and documented strategies to improve user engagement.",
+    "start": "Apr 2025",
+    "end": "current",
+    "description": "Developing, managing, and optimizing online platforms to ensure they are user-friendly and aligned with organizational goals. Responsible for monitoring platform performance and making data-driven recommendations using HTML, CSS, JavaScript, and CMS.",
     "skills": [
-      "UI Design",
-      "Layout",
-      "User Engagement",
-      "Cross-functional Teams"
+      "Web Management",
+      "CMS",
+      "JavaScript",
+      "User Experience",
+      "Accessibility"
     ]
   },
-
+  {
+    "type": "Education",
+    "tittle": "Software Engineering Diploma",
+    "institution": "BrainStation",
+    "place": "Toronto, ON",
+    "start": "2024",
+    "end": "2025",
+    "description": "In BrainStation's Software Engineering bootcamp, I learned key software engineering concepts and computer science fundamentals. I gained hands-on experience with HTML, CSS, Terminal, React, MySQL, and I learned to create multi-page web products from scratch using tools like BEM, Flexbox, Sass, and Git.",
+    "skills": [
+      "Software Engineering",
+      "Web Development",
+      "React",
+      "HTML",
+      "CSS",
+      "Git",
+      "MySQL"
+    ]
+  },
   {
     "type": "Education",
     "tittle": "Game Development Diploma",
@@ -112,38 +54,94 @@
     "skills": ["Customer Service", "Cash Handling", "Reliability", "Teamwork"]
   },
   {
-    "type": "Education",
-    "tittle": "Software Engineering Diploma",
-    "institution": "BrainStation",
-    "place": "Toronto, ON",
-    "start": "2024",
-    "end": "2025",
-    "description": "In BrainStation's Software Engineering bootcamp, I learned key software engineering concepts and computer science fundamentals. I gained hands-on experience with HTML, CSS, Terminal, React, MySQL, and I learned to create multi-page web products from scratch using tools like BEM, Flexbox, Sass, and Git.",
+    "type": "Work",
+    "tittle": "Graphic User Interface Designer",
+    "institution": "Hangaroa S. A.",
+    "place": "Remote",
+    "start": "Sep 2021",
+    "end": "Aug 2022",
+    "description": "Designed and implemented layouts and graphic materials for software projects. Collaborated with cross-functional teams and clients to publish content and documented strategies to improve user engagement.",
     "skills": [
-      "Software Engineering",
-      "Web Development",
-      "React",
-      "HTML",
-      "CSS",
-      "Git",
-      "MySQL"
+      "UI Design",
+      "Layout",
+      "User Engagement",
+      "Cross-functional Teams"
     ]
   },
-
   {
     "type": "Work",
-    "tittle": "Web Developer",
-    "institution": "STEM Montessori Academy of Canada",
-    "place": "Remote",
-    "start": "Apr 2025",
-    "end": "current",
-    "description": "Developing, managing, and optimizing online platforms to ensure they are user-friendly and aligned with organizational goals. Responsible for monitoring platform performance and making data-driven recommendations using HTML, CSS, JavaScript, and CMS.",
+    "tittle": "Web Multimedia Designer",
+    "institution": "Centre for Research, Development, and Innovation in Computer Systems",
+    "place": "Ecuador",
+    "start": "Oct 2019",
+    "end": "Feb 2020",
+    "description": "Created mock-ups, storyboards, and digital assets for academic platforms, ensuring alignment with branding guidelines. Helped minimize technical issues through structured testing and file management.",
     "skills": [
-      "Web Management",
-      "CMS",
-      "JavaScript",
-      "User Experience",
-      "Accessibility"
+      "Multimedia",
+      "Storyboarding",
+      "Mockups",
+      "Digital Assets",
+      "Branding"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Digital Designer Intership",
+    "institution": "Uno Porciento Agengy",
+    "place": "Ecuador",
+    "start": "Jun 2019",
+    "end": "Sep 2019",
+    "description": "Designed social media content and stationery material. Made brochures and sample design proposals.",
+    "skills": [
+      "Branding",
+      "Marketing",
+      "Design Visual Principles",
+      "Color Theory"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Graphic Designer Intership",
+    "institution": "ESPOL",
+    "place": "Ecuador",
+    "start": "May 2018",
+    "end": "Sep 2018",
+    "description": "Created graphic pieces for internal and external communication.",
+    "skills": [
+      "Branding",
+      "Marketing",
+      "Design Visual Principles",
+      "Color Theory"
+    ]
+  },
+  {
+    "type": "Work",
+    "tittle": "Computer Lab Assistant",
+    "institution": "ESPOL",
+    "place": "Ecuador",
+    "start": "May 2017 ",
+    "end": "Apr 2018",
+    "description": "User support and assistance with equipment maintenance in the computer labs of the faculty.",
+    "skills": [
+      "Branding",
+      "Marketing",
+      "Design Visual Principles",
+      "Color Theory"
+    ]
+  },
+  {
+    "type": "Education",
+    "tittle": "Bachelor's Degree of Graphic Design",
+    "institution": "ESPOL",
+    "place": "Ecuador",
+    "start": "2016",
+    "end": "2021",
+    "description": "The Graphic Design program at ESPOL provided a strong foundation in visual communication, digital media, and design principles. I gained hands-on experience in branding, illustration, and multimedia, developing skills that enable me to craft compelling, visually impactful designs for diverse media platforms.",
+    "skills": [
+      "Branding",
+      "Marketing",
+      "Design Visual Principles",
+      "Color Theory"
     ]
   }
 ]
