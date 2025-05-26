@@ -1,0 +1,33 @@
+[
+  {
+    "tittle": "Budget Bloom",
+    "key": "budgetBloom",
+    "role": "UX Case Study",
+    "link": "",
+    "description": "BudgetBloom is a budget estimator designed to assist users in visualizing their financial situation and setting financial goals. The web application lets users plan their annual budget by enteringtheir monthly expenses and income with spending categories.",
+    "problem": [
+      "No appealing and free applications are available in the market.",
+      "Not knowing how you will end the month or the next one.",
+      "Long-term financial planning issues.",
+      "Lack of knowledge on how to organize income and expenses.",
+      "Difficulty visualizing spending patterns. Other tools do not provide a full-year overview."
+    ],
+    "solutions": [
+      "Single web page no payment need",
+      "Provide real-time updates and summaries to help users understand their monthly financial status.",
+      "Include tools for long-term financial goal setting and tracking (e.g., savings goals, projections).",
+      "Generate a full-year budget overview, allowing users to anticipate future financial outcomes."
+    ],
+    "process": ["Empathize", "Define", "Ideate", "Design", "Test"],
+    "comparative": "Most finance apps focus on automation or complex budgeting methods, which can overwhelm beginners. Tools like Mint and YNAB offer powerful features but lack simplicity or visual appeal. BudgetBloom fills this gap by providing a friendly, engaging, and goal-driven experience. It empowers users to take control of their finances in a way that feels clear and motivating.",
+    "questions": [
+      "How do you feel when you have to talk about money or budgets?",
+      "Have you ever tried to track your expenses? What tools do you use?",
+      "What frustrates you most when using budgeting apps?",
+      "What features would you find most useful in a financial app?",
+      "How often do you check your balance or expenses?",
+      "Would you like to see charts, progress bars, or other visual elements?",
+      "What would motivate you to maintain a financial tracking habit?"
+    ]
+  }
+]

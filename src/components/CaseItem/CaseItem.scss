@@ -1,0 +1,116 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/globals.scss" as *;
+
+.case {
+  @include padding;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  &__multimedia {
+    display: flex;
+    justify-content: center;
+    background-color: #f2d5e5;
+
+    &--logo {
+      width: 100%;
+      height: 50vw;
+      object-fit: cover;
+
+      @include tablet {
+        object-position: center;
+        width: 49vw;
+        height: 20vw;
+      }
+
+      @include desktop {
+        // width: 640px;
+        // height: 640px;
+      }
+    }
+
+    &--chart {
+      width: 100%;
+      height: auto;
+      @include padding;
+
+      @include tablet {
+            display: flex
+;
+        width: 70vw;
+        margin: auto;
+      }
+
+      @include desktop {
+      }
+    }
+  }
+  &__text {
+    width: 100%;
+
+    @include tablet {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+      @include padding;
+    }
+
+    @include desktop {
+      width: $desktop-breakpoint;
+    }
+
+    &--tag {
+      background-color: #f2d5e5;
+      margin: 2rem;
+      @include padding;
+
+      @include tablet {
+        font-size: 0.9375rem;
+      }
+
+      @include desktop {
+        font-size: 1rem;
+      }
+    }
+
+    &__tittle-link {
+      text-decoration: none;
+    }
+
+    &__link {
+      display: flex;
+      margin-top: 2rem;
+
+      &--text {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+        text-decoration: none;
+        color: $color-purple-royal;
+        font-weight: 500;
+      }
+
+      &--img {
+        background-color: $color-quartz;
+        border-radius: 15px;
+        margin: 0 0.5rem 0.3rem 0;
+        padding: 3px;
+        fill: $color-purple-royal;
+      }
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__container {
+    max-width: 45vw;
+    @include padding;
+  }
+}

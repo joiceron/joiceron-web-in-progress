@@ -2,6 +2,7 @@ import "./PortfolioPage.scss";
 import { useState } from "react";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
 import PhotoItem from "../../components/PhotoItem/PhotoItem";
+import CaseItem from "../../components/CaseItem/CaseItem";
 
 import webProjects from "../../data/web-projects-list.json";
 import gameProjects from "../../data/game-projects-list.json";
@@ -39,6 +40,7 @@ import disImg11 from "/graphic-dis-images/Joice_Ceron_Portfolio_page-0013.jpg";
 
 export default function PortfolioPage() {
   const industry = [
+    "UI & UX",
     "Web Development",
     "Graphic Design",
     "Illustration",
@@ -83,7 +85,57 @@ export default function PortfolioPage() {
     disImg11,
   ];
 
-  const [portfolioDoc, setPortfolioDoc] = useState("Web Development");
+  const [portfolioDoc, setPortfolioDoc] = useState("UI & UX");
+
+  function renderPortfolioContent() {
+    switch (portfolioDoc) {
+      case industry[0]:
+        return <CaseItem />;
+
+      case industry[1]:
+        return webProjects.map((project) => (
+          <ProjectItem
+            project={project}
+            image={webImageMap[project.key]}
+            key={project.key}
+          />
+        ));
+
+      case industry[2]:
+        return disImagMap.map((image, index) => (
+          <img
+            className="pdf-image"
+            src={image}
+            alt={`Portfolio page num ${index}`}
+            key={index}
+          />
+        ));
+
+      case industry[3]:
+        return drawProjects.map((draw) => (
+          <PhotoItem draw={draw} image={drawingsMap[draw.key]} key={draw.key} />
+        ));
+
+      case industry[4]:
+        return gameProjects.map((project) => (
+          <ProjectItem
+            project={project}
+            image={gameImageMap[project.key]}
+            key={project.key}
+          />
+        ));
+
+      default:
+        return gameProjects.map((project) => (
+          <ProjectItem
+            project={project}
+            image={gameImageMap[project.key]}
+            key={project.key}
+          />
+        ));
+    }
+  }
+
   return (
     <main className="portfolio">
       <div className="portfolio__nav-box">
@@ -136,38 +188,22 @@ export default function PortfolioPage() {
               {industry[3]}
             </button>
           </li>
+          <li>
+            <button
+              className={`button portfolio__nav--button ${
+                portfolioDoc == industry[4] ? "active" : ""
+              }`}
+              onClick={() => {
+                setPortfolioDoc(`${industry[4]}`);
+              }}
+            >
+              {industry[4]}
+            </button>
+          </li>
         </ul>
       </div>
 
-      <section className="section">
-        {portfolioDoc === industry[0]
-          ? webProjects.map((project) => (
-              <ProjectItem
-                project={project}
-                image={webImageMap[project.key]}
-                key={project.key}
-              />
-            ))
-          : portfolioDoc === industry[1]
-          ? disImagMap.map((image, index) => (
-              <img className="pdf-image" src={image} alt={`Portfolio page num ${index}`} key={index} />
-            ))
-          : portfolioDoc === industry[2]
-          ? drawProjects.map((draw) => (
-              <PhotoItem
-                draw={draw}
-                image={drawingsMap[draw.key]}
-                key={draw.key}
-              />
-            ))
-          : gameProjects.map((project) => (
-              <ProjectItem
-                project={project}
-                image={gameImageMap[project.key]}
-                key={project.key}
-              />
-            ))}
-      </section>
+      <section className="section">{renderPortfolioContent()}</section>
     </main>
   );
 }

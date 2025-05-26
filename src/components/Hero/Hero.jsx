@@ -55,6 +55,7 @@ export default function Hero() {
         // if endsWith "!" then no "."
         // when it has a ` ?" `
         // if endsWith "..." then checks as ".." and temporal[1]} is empty "."
+        // if in half it have "phrase." it will cut it at the period 
       }
     } catch (error) {
       console.error(error);
