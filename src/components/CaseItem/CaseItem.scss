@@ -24,11 +24,6 @@
         width: 49vw;
         height: 20vw;
       }
-
-      @include desktop {
-        // width: 640px;
-        // height: 640px;
-      }
     }
 
     &--chart {
@@ -37,8 +32,7 @@
       @include padding;
 
       @include tablet {
-            display: flex
-;
+        display: flex;
         width: 70vw;
         margin: auto;
       }
@@ -51,9 +45,6 @@
     width: 100%;
 
     @include tablet {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
       @include padding;
     }
 
@@ -62,43 +53,13 @@
     }
 
     &--tag {
-      background-color: #f2d5e5;
-      margin: 2rem;
-      @include padding;
-
-      @include tablet {
-        font-size: 0.9375rem;
-      }
-
-      @include desktop {
-        font-size: 1rem;
-      }
+      background-color: $color-quartz;
+      margin: 1rem;
+      padding: 1rem 4rem;
     }
 
-    &__tittle-link {
-      text-decoration: none;
-    }
-
-    &__link {
-      display: flex;
-      margin-top: 2rem;
-
-      &--text {
-        display: flex;
-        align-items: center;
-        margin-right: 2rem;
-        text-decoration: none;
-        color: $color-purple-royal;
-        font-weight: 500;
-      }
-
-      &--img {
-        background-color: $color-quartz;
-        border-radius: 15px;
-        margin: 0 0.5rem 0.3rem 0;
-        padding: 3px;
-        fill: $color-purple-royal;
-      }
+    &--list {
+      padding: 0;
     }
   }
 }
@@ -110,7 +71,13 @@
   flex-wrap: wrap;
 
   &__container {
-    max-width: 45vw;
     @include padding;
+
+    @include tablet {
+      max-width: 45vw;
+    }
+    @include desktop {
+      width: 43rem;
+    }
   }
 }

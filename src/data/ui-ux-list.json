@@ -15,10 +15,10 @@
     "solutions": [
       "Single web page no payment need",
       "Provide real-time updates and summaries to help users understand their monthly financial status.",
-      "Include tools for long-term financial goal setting and tracking (e.g., savings goals, projections).",
+      "Include tools for long-term financial goal setting and tracking.",
       "Generate a full-year budget overview, allowing users to anticipate future financial outcomes."
     ],
-    "process": ["Empathize", "Define", "Ideate", "Design", "Test"],
+    "process": ["Empathize", "Define", "Ideate", "Design"],
     "comparative": "Most finance apps focus on automation or complex budgeting methods, which can overwhelm beginners. Tools like Mint and YNAB offer powerful features but lack simplicity or visual appeal. BudgetBloom fills this gap by providing a friendly, engaging, and goal-driven experience. It empowers users to take control of their finances in a way that feels clear and motivating.",
     "questions": [
       "How do you feel when you have to talk about money or budgets?",
