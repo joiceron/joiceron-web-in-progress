@@ -8,6 +8,7 @@
   &__bg {
     z-index: 0;
     width: 100%;
+    min-height: 14rem;
     max-height: 35vh;
     opacity: 25%;
     object-fit: cover;
@@ -30,6 +31,22 @@
 
     &--punch-line {
       padding-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &--button {
+      padding: 0;
+      border: 0;
+      background-color: $color-white-whisper;
+    }
+
+    &--icon {
+      border: 1px solid $color-pale;
+      padding: 0.2rem;
+
+      &:hover {
+        fill: $color-white-whisper;
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <small className="footer__txt--copy">
-        &copy; Copyright 2025. All rights reserved.
+        &copy; 2025 joiceron | Joice Ceron. All rights reserved.
       </small>
     </footer>
   );
